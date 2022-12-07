@@ -71,8 +71,8 @@ if [ -d "$ETC_DIR/Manisso" ]; then
 fi
 
 echo "[✔] Installing ...";
-#echo "";
-#git clone --depth=1 https://github.com/Manisso/mwiriwe "$INSTALL_DIR";
+echo "";
+git clone --depth=1 https://github.com/dgatwist/mwiriwe "$INSTALL_DIR";
 echo "#!$BASH_PATH
 python $INSTALL_DIR/mwiriwe.py" "${1+"$@"}" > "$INSTALL_DIR/mwiriwe";
 chmod +x "$INSTALL_DIR/mwiriwe";
